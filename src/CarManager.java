@@ -103,7 +103,7 @@ se trouve entre deux valeurs données
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(",");
+                String[] parts = line.split(",");//on utilise la virgule comme séparateur des valeurs
                 int carId = Integer.parseInt(parts[0]);
                 String make = parts[1];
                 String model = parts[2];
